@@ -1,0 +1,10 @@
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\bin\Debug\EVCharger.Client.exe.config
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\bin\Debug\EVCharger.Client.exe
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\bin\Debug\EVCharger.Client.pdb
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\bin\Debug\EVCharger.Common.dll
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\bin\Debug\EVCharger.Common.pdb
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.csproj.AssemblyReference.cache
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.csproj.CoreCompileInputs.cache
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharge.54505580.Up2Date
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.exe
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.pdb

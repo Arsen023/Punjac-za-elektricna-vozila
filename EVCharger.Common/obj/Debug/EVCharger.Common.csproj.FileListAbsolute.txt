@@ -1,0 +1,6 @@
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Common\bin\Debug\EVCharger.Common.dll
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Common\bin\Debug\EVCharger.Common.pdb
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Common\obj\Debug\EVCharger.Common.csproj.AssemblyReference.cache
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Common\obj\Debug\EVCharger.Common.csproj.CoreCompileInputs.cache
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Common\obj\Debug\EVCharger.Common.dll
+C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Common\obj\Debug\EVCharger.Common.pdb

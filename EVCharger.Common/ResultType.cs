@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace EVCharger.Common
 {
-    public class Class1
+    public enum ResultType
     {
+        Success,
+        Warning,
+        Failed
     }
 }
