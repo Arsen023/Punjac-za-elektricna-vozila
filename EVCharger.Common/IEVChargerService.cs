@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ServiceModel;
 
 namespace EVCharger.Common
 {
@@ -11,6 +6,15 @@ namespace EVCharger.Common
     public interface IEVChargerService
     {
         [OperationContract]
-        ChargingDataResult SendChargingData(ChargingDataOptions options);
+        [FaultContract(typeof(ChargingValidationFault))]
+        void StartSession(string vehicleId);
+
+        [OperationContract]
+        [FaultContract(typeof(ChargingValidationFault))]
+        void PushSample(ChargingSample sample);
+
+        [OperationContract]
+        [FaultContract(typeof(ChargingValidationFault))]
+        void EndSession(string vehicleId);
     }
 }

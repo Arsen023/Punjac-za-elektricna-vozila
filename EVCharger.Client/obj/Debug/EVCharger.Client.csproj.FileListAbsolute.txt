@@ -8,3 +8,14 @@ C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Deb
 C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharge.54505580.Up2Date
 C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.exe
 C:\Users\David\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.pdb
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\bin\Debug\EVCharger.Client.exe.config
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\bin\Debug\EVCharger.Client.exe
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\bin\Debug\EVCharger.Client.pdb
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\bin\Debug\EVCharger.Common.dll
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\bin\Debug\EVCharger.Common.pdb
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.csproj.AssemblyReference.cache
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.exe.config
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.csproj.CoreCompileInputs.cache
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharge.54505580.Up2Date
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.exe
+c:\Users\arsen\source\repos\Punjac-za-elektricna-vozila\EVCharger.Client\obj\Debug\EVCharger.Client.pdb

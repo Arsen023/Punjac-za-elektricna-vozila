@@ -1,70 +1,29 @@
 ﻿using EVCharger.Common;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EVCharger.Server
 {
     public class EVChargerService : IEVChargerService
     {
-        [OperationBehavior(AutoDisposeParameters = true)]
-        public ChargingDataResult SendChargingData(ChargingDataOptions options)
+        public void StartSession(string vehicleId)
         {
-            try
-            {
-                if(options == null)
-                {
-                    return new ChargingDataResult(
-                        ResultType.Warning, 
-                        "Options object is null.");
-                }
+            ChargingServiceValidator.ThrowIfInvalidVehicleId(vehicleId);
 
-                if(options.MemoryStream == null || options.MemoryStream.Length == 0)
-                {
-                    return new ChargingDataResult(
-                        ResultType.Warning,
-                        "Memory stream is empty.");
-                }
+            Console.WriteLine($"[StartSession] VehicleId={vehicleId}");
+        }
 
-                string folderPath = "ReceivedFiles";
+        public void PushSample(ChargingSample sample)
+        {
+            ChargingServiceValidator.ThrowIfInvalidSample(sample);
 
-                if(!Directory.Exists(folderPath))
-                {
-                    Directory.CreateDirectory(folderPath);
-                }
+            Console.WriteLine($"[PushSample] VehicleId={sample.VehicleId}, RowIndex={sample.RowIndex}, Ts={sample.Timestamp:O}");
+        }
 
-                string filePath = Path.Combine(folderPath, options.FileName);
+        public void EndSession(string vehicleId)
+        {
+            ChargingServiceValidator.ThrowIfInvalidVehicleId(vehicleId);
 
-                using (FileStream fs = File.Create(filePath))
-                {
-                    options.MemoryStream.Position = 0;
-
-                    options.MemoryStream.CopyTo(fs);
-                }
-
-
-                Console.WriteLine("--------------------------------");
-                Console.WriteLine("NEW FILE RECEIVED");
-                Console.WriteLine($"Vehicle ID: {options.VehicleId}");
-                Console.WriteLine($"File Name : {options.FileName}");
-                Console.WriteLine("--------------------------------");
-
-
-                return new ChargingDataResult(
-                    ResultType.Success,
-                    "Charging data successfully received.");
-
-            }
-            catch(Exception ex)
-            {
-                return new ChargingDataResult(
-                    ResultType.Failed,
-                    ex.Message);
-            }
+            Console.WriteLine($"[EndSession] VehicleId={vehicleId}");
         }
     }
 }
