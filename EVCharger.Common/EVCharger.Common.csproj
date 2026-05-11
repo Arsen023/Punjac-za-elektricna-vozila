@@ -46,6 +46,7 @@
     <Compile Include="ChargingSample.cs" />
     <Compile Include="ChargingServiceValidator.cs" />
     <Compile Include="ChargingValidationFault.cs" />
+    <Compile Include="WcfResourceHelper.cs" />
     <Compile Include="ChargingDataOptions.cs" />
     <Compile Include="ChargingDataResult.cs" />
     <Compile Include="IEVChargerService.cs" />

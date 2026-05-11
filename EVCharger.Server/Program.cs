@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using EVCharger.Common;
+using System;
 using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EVCharger.Server
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
-            ServiceHost host = new ServiceHost(typeof(EVChargerService));
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
 
+            ServiceHost host = null;
             try
             {
+                host = new ServiceHost(typeof(EVChargerService));
                 host.Open();
 
                 Console.WriteLine("EV Charger WCF service is running...");
@@ -22,14 +21,17 @@ namespace EVCharger.Server
                 Console.WriteLine("Press ENTER to stop server.");
 
                 Console.ReadLine();
-
-                host.Close();
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Server error: " + ex.Message);
-                host.Abort();
             }
+            finally
+            {
+                WcfResourceHelper.SafeShutdown(host);
+            }
+
+            return 0;
         }
     }
 }
