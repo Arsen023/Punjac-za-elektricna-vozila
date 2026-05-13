@@ -10,6 +10,44 @@ namespace EVCharger.Client
         static int Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
+            Console.WriteLine(new string('=', 58));
+            Console.WriteLine(" EVCharger — klijentska aplikacija");
+            Console.WriteLine(new string('=', 58));
+            Console.WriteLine();
+
+            if (args != null && args.Length > 0 && string.Equals(args[0], "--demo-phaseC", StringComparison.OrdinalIgnoreCase))
+            {
+                RunPhaseCDemos();
+            }
+            else
+            {
+                Console.WriteLine("Glavni meni:");
+                Console.WriteLine();
+                Console.WriteLine("  1  Citanje CSV fajlova");
+                Console.WriteLine();
+                Console.WriteLine("  2  Simulacija : Dispose, prekid / uredan završetak WCF");
+                Console.WriteLine();
+                Console.Write("Vaš izbor (1 ili 2): ");
+                string c = Console.ReadLine();
+                if (string.Equals(c?.Trim(), "2", StringComparison.Ordinal))
+                {
+                    RunPhaseCDemos();
+                }
+                else
+                {
+                    Task5ChargingCsvTransfer.RunInteractive();
+                }
+            }
+
+            Console.WriteLine();
+            Console.WriteLine(new string('-', 58));
+            Console.WriteLine("Kraj rada programa. Pritisnite bilo koji taster za izlaz.");
+            Console.ReadKey(intercept: true);
+            return 0;
+        }
+
+        private static void RunPhaseCDemos()
+        {
             Console.WriteLine("Faza C — Dispose: FileStream/StreamReader i WCF kanal.");
             Console.WriteLine();
 
@@ -18,11 +56,6 @@ namespace EVCharger.Client
             DemoWcfInterruptedTransfer();
 
             DemoWcfNormalShutdown();
-
-            Console.WriteLine();
-            Console.WriteLine("Kraj demonstracije. Pritisnite taster za izlaz.");
-            Console.ReadKey(intercept: true);
-            return 0;
         }
 
         /// <summary>

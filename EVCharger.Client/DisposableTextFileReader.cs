@@ -43,8 +43,12 @@ namespace EVCharger.Client
                 return;
             }
 
-            _reader.Dispose();
+            _reader?.Dispose();
+            _fileStream?.Dispose();
+
             _disposed = true;
+
+            GC.SuppressFinalize(this);
         }
 
         private void ThrowIfDisposed()
