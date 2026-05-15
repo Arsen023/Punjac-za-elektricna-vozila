@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChargingSessionCsvFormatter.cs" />
+    <Compile Include="ChargingSessionFileStore.cs" />
     <Compile Include="EVChargerService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
