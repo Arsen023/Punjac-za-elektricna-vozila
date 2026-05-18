@@ -14,6 +14,7 @@ namespace EVCharger.Server
             }
             catch (FaultException<ChargingValidationFault> ex)
             {
+                //za 6 tacku ako je greska upisi u rejects.csv
                 ChargingSessionFileStore.LogReject(ex.Detail);
                 throw;
             }

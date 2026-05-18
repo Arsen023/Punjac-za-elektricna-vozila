@@ -51,6 +51,7 @@
     <Compile Include="EvCpwDatasetLocator.cs" />
     <Compile Include="EvChargerWcfClient.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Task4DisposeDemos.cs" />
     <Compile Include="Task5ChargingCsvTransfer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

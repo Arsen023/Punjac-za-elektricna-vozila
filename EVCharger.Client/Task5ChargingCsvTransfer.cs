@@ -149,7 +149,7 @@ namespace EVCharger.Client
                 Console.WriteLine();
                 if (skipped > 0)
                 {
-                    Console.WriteLine("  Napomena: preskočeni redovi su u log fajlu (parsiranje ili odbijanje na servisu).");
+                    Console.WriteLine("  Napomena: preskočeni redovi su u log fajlu");
                 }
 
                 Console.WriteLine();
